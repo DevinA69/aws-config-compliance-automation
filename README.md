@@ -12,10 +12,10 @@ I built this as a learning project while exploring **cloud compliance, GRC, and 
 - Secured AWS account (root MFA, billing guardrails).
 - Enabled AWS Config recorder in `us-east-1`.
 - Added AWS Managed Rule: `s3-bucket-public-read-prohibited`.
-- Made a test bucket public → Config flagged ❌ Noncompliant.
+- Made a test bucket public → Config flagged Noncompliant.
 - Remediation runbook: `AWS-DisableS3BucketPublicReadWrite`.
 - Manual remediation via Systems Manager → bucket flipped private.
-- Config re-evaluated → ✅ Compliant.
+- Config re-evaluated → Compliant.
 
 ---
 
@@ -26,7 +26,7 @@ Execution of `AWS-DisableS3BucketPublicReadWrite` showing **Success**.
 ![Remediation Success](./screenshots/ssm-remediation-success.png)
 
 ### 2. AWS Config Timeline
-Compliance history for the test bucket showing it flipped to ✅ Compliant after remediation.  
+Compliance history for the test bucket showing it flipped to Compliant after remediation.  
 ![Config Timeline](./screenshots/config-timeline.png)
 
 ### 3. S3 Bucket (After Remediation)
@@ -52,4 +52,4 @@ Permissions tab showing the bucket is no longer publicly accessible.
 
 ## Author
 Project by **Devin Anderson**  
-*(Built as part of my cloud compliance learning journey — linking here for recruiters and peers to explore.)*
+*(Built as part of my cloud compliance learning journey)*
